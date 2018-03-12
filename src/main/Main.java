@@ -21,7 +21,7 @@ public class Main {
 		HttpClient client = new DefaultHttpClient();
 
 		MYSQLControl.getConnection();
-		int university = 2;
+		int university = 1;
 		int province = 1;
 		int classical = 1;
 		List<SchoolScore> schoolScoreList = new ArrayList<SchoolScore>();
@@ -36,6 +36,7 @@ public class Main {
 					schoolScoreList.addAll(temp);
 
 					for(SchoolScore sc : temp){
+						System.out.println(sc.toString());
 						System.out.println(MYSQLControl.insertScore(sc));
 					}
 				}
