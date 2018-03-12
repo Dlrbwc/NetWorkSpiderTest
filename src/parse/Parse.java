@@ -13,6 +13,10 @@ import org.jsoup.select.Elements;
 public class Parse {
 	public static List<SchoolScore> getData (String html) throws Exception{
         //获取的数据，存放在集合中
+
+
+
+
         List<SchoolScore> data = new ArrayList<SchoolScore>();
         //采用Jsoup解析
         Document doc = Jsoup.parse(html);
